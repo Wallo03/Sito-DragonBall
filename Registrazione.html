@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DragonBall - Registrati</title>
+</head>
+<body>
+  <header>
+    <img src="img/dragonball.png" width="300" alt="DragonBall logo">
+    
+    <form id="form-registrazione" name="registrazione" action="RegistrazioneRiuscita.html" method="post">
+
+    <nav>
+      <fieldset>
+       <a href="Home.html">Home</a>
+       <a href="Accedi.html">Accedi</a>
+       <a href="Registrazione.html">Registrati</a>
+    </nav> 
+     </fieldset>
+
+  </header>
+
+
+    <fieldset>
+        <legend>Registrati</legend>
+        
+        <label for="username-txt">Username <label style="color: red;">*</label></label> 
+          <input type="text" name="username" id="username-txt" placeholder="Inserisci username" maxlength="40" required>
+
+          <br>
+
+        <label for="nome-txt">Nome <label style="color: red;">*</label></label> 
+          <input type="text" name="nome" id="nome-txt" placeholder="Inserisci nome" maxlength="40" required>
+
+          <br>
+
+        <label for="cognome-txt">Cognome <label style="color: red;">*</label></label>
+          <input type="text" name="cognome" id="cognome-txt" placeholder="Inserisci cognome" maxlength="30" required>
+
+          <br>
+
+           <label for="email-txt">E-mail <label style="color: red;">*</label></label>
+             <input type="email" name="email" id="email-txt" placeholder="inserisci E-mail" required>
+
+          <br>
+
+           <label for="pass-txt">Password <label style="color: red;">*</label></label>
+             <input type="password" name="password" id="pass-txt" placeholder="Inserisci password" required>
+
+             <br>
+
+             <label for="Città-select">Città</label>
+             <select name="Città" id="Città-select" required>
+                 <option value="SP1" selected>Bologna</option>
+                 <option value="SP2">Modena</option>
+                 <option value="SP2">Torino</option>
+                 <option value="SP2">Milano</option>
+                 <option value="SP2">Roma</option>
+                 <option value="SP2">Napoli</option>
+             </select>
+
+             <br>     
+             
+             <label for="info-txt-area">Info</label> <br>
+            <textarea name="InfoUser" id="info-txt-area" cols="30" rows="10"></textarea>
+        <br>
+
+          <label for="">Sesso <label style="color: red;">*</label></label>
+          <input type="radio" name="sesso" id="form-radio-M" value="M" required>M
+          <input type="radio" name="sesso" id="form-radio-F" value="F" required>F
+
+          <br>
+
+          <input type="checkbox" name="privacy" id="form-privacy" required><label style="color: red;">*</label>
+          <label for="form-privacy">Accetto Condizioni Privacy</label>
+
+          <br>
+          <div style="text-align: right;">
+
+            <input type="reset" value="Reset" name="Btn Reset" id="reset-btn">
+            <input type="submit" value="Invio" name="Btn Invio" id="invio-btn">
+
+          </div>
+        
+
+
+
+    </fieldset>
+
+
+
+    </form>
+</body>
+<footer> 
+  <fieldset>
+    <address>
+      Dragon Ball s.r.l.<br> 
+      Via Capsule Corporation, 3<br> 
+      Tel <a href="tel:+39 391 567 8931">391 567 8931</a><br>
+      E-mail <a href="mailto:DragonBall@Capsule-Corporation.jp">DragonBall@Capsule-Corporation.jp</a><br>
+    </address>
+  </fieldset>
+</footer> 
+</html>
